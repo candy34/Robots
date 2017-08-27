@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ {{>Header}}
+  <body>
+    {{#userDal.users}}
+
+        
+         <div class="robot">
+            <img class="pic" src={{avatar}} alt="{{name}}">
+            <a href={{id}}>{{name}}</a>
+            <p>{{job}} - {{company}}</p>
+        
+        </div>
+       
+ 
+    {{/userDal.users}}        
+  </body>
+</html>

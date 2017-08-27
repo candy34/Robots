@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {{>Header}}
+  <body>
+      <div class="row">
+          
+         {{#users}}
+         <div class="robot">
+          <img class="pic" src={{avatar}} alt="{{name}}"/>
+         <a href={{id}}>{{name}}</a>
+        <p>{{job}} - {{company}}</p>
+        
+        </div>
+       {{/users}}
+      
+    </div>
+  </body>
+</html>
