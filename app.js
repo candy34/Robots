@@ -21,13 +21,13 @@ app.get('/', function(request,response){
 })
 
 app.get('/:id', function(request,response){
-  const id =request.params.id
+  const id = Number (request.params.id)
   console.log(id);
   console.log(request.params.id);
   const userDal = dal.getUser(id)
-  //const userDal =data.users[request.params.id-1]
+  // const userDal =data.users[request.params.id-1]
   console.log(userDal);
-  response.render('user', {userDal: userDal})
+  response.render('data', {users: userDal,id})
   console.log('You Have Arrived');
 })
 
