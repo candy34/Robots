@@ -1,7 +1,7 @@
-const users = require('./data')
+const {users} = require('./data')
 
 function getUsers (){
-    return users.users
+    return users
 }
 
 function getUser (userId) {
